@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body.dark{
+            background-color: black;
+            color:white
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Event handling methods</h1>
+    <p id="story">I wanted to find my friend,he was hiding in the basement.</p>
+    <button onclick="b()">Get in the mood</button>
+    <br>
+    <div>Type your name,if you dare:<input type="text" id="name"></div>
+    <br>
+    <button onclick="a()">Pls dont click me</button>
+    <br>
+    <button onclick="c()">Tell me what happened</button>
+    <script>
+        function a() {
+            var personName = document.getElementById("name").value;
+
+            alert("I told you not to do that " + personName);
+        }
+        function b() {
+            document.body.className="dark";
+        }
+        function c(){
+        document.getElementById("story").innerHTML="so i carefully searched for him,i found him near the river."
+        }
+    </script>
+</body>
+
+</html>
